@@ -13,6 +13,19 @@
   --border-color: #253745;
   --gray-color: #11212d;
   --dark-color: #06141b;
+  --gold-color: #cda470;
+}
+
+.color-font {
+  background: rgb(6, 20, 27);
+  background: linear-gradient(
+    270deg,
+    rgba(6, 20, 27, 1) 0%,
+    rgba(37, 55, 69, 1) 37%,
+    rgba(204, 208, 207, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
@@ -21,9 +34,9 @@ body {
 }
 
 #wrapper {
-  background-image: url(./img/background-copy.jpg);
+  /* background-image: url(./img/background-copy.jpg); */
   width: 900px;
-  height: 600px;
+  height: 550px;
   margin: auto;
   margin-top: 45px;
   background-position: center;
@@ -31,68 +44,117 @@ body {
 }
 
 #inner-wrapper {
-  width: 750px;
+  width: 700px;
   margin: auto;
   padding: 21px;
 }
 
-#home img {
-  width: 300px;
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.home .container img {
+  width: 330px;
   box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 nav {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 nav ul {
-  display: flex;
   justify-content: space-between;
 }
 
 nav a {
   text-decoration: none;
+  color: var(--txt-color);
 }
 
 nav a:hover {
   color: var(--heading-color);
 }
 
-main {
-  display: flex;
-  justify-content: space-between;
-}
-
-#home {
-  display: flex;
+.home .container {
   align-items: center;
 }
 
-#home div {
+.home .container div {
   margin-left: 35px;
-  font-size: 35px;
 }
-#home p {
+
+.home .container p {
   font-size: 25px;
 }
 
-#home h1 {
+.home .container h1 {
   font-size: 60px;
 }
 h1 {
-  color: #cda470;
+  color: var(--gold-color);
   margin: 10px 0px;
 }
 
-/* main a {
-  text-decoration: none;
-} */
-
-/* main a:hover {
-  text-decoration: underline;
-} */
-
 main img {
+  margin-top: 40px;
+}
+
+.home .container #social-icon ul {
+  font-size: 25px;
+  margin-top: 120px;
+  justify-content: space-between;
+}
+
+.line {
+  position: absolute;
+  height: 1px;
+  width: 65%;
+  background: rgb(6, 20, 27);
+  background: linear-gradient(
+      270deg,
+      rgba(6, 20, 27, 1) 0%,
+      rgba(37, 55, 69, 1) 37%,
+      rgba(204, 208, 207, 1) 100%
+    ),
+    linear-gradient(to right, #06141b 0%, #253745 37%, #ccd0cf 100%);
+}
+
+.line.left {
+  left: 0;
+  margin-top: 40px;
+}
+
+.service .row {
+  margin: 10rem auto 80px;
+  text-align: center;
+}
+
+.service .row h6 {
+  font-weight: 300;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 10px;
+}
+
+.service .row h3 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.service .item-box {
+  text-align: left;
   margin-top: 30px;
+  padding: 60px 40px;
+}
+
+.services .item-box .icon {
+  text-align: center;
+  font-size: 60px;
+  width: 80px;
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <meta name="author" content="  Zohreh Daghigh Kia " />
     <title>Zohre's Portfolio</title>
   </head>
@@ -12,7 +16,7 @@
       <div id="inner-wrapper">
         <header></header>
         <nav>
-          <ul>
+          <ul class="flex">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -21,19 +25,73 @@
           </ul>
         </nav>
         <main>
-          <section id="home">
-            <img src="./img/photo4.jpg" alt="My Picture" />
-            <div>
-              <p>Hey There!</p>
-              <h1>I'm Zohre,</h1>
-              <p>An Artist with a love for Programming!</p>
+          <section class="home">
+            <div class="container flex">
+              <img src="./img/photo4.jpg" alt="My Picture" />
+              <div id="cont">
+                <p>Hey There!</p>
+                <h1>I'm Zohre,</h1>
+                <p>An Artist with a love for Programming!</p>
+                <div id="social-icon">
+                  <ul class="flex">
+                    <a href="www.linkedin.com"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a href="www.facebook.com"
+                      ><i class="fa-brands fa-meta"></i
+                    ></a>
+                    <a href="www.instagram.com"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="www.github.com"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="www.gmail.com"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <div class="line bottom left"></div>
           </section>
-          <section id="service"></section>
-          <section id="portfolio"></section>
-          <section id="testimonials"></section>
-          <section id="blog"></section>
-          <section id="contact-us"></section>
+          <section class="service">
+            <div class="container">
+              <div class="row">
+                <h6>Best Features</h6>
+                <h3 class="color-font">
+                  We are a new digital product development agency
+                </h3>
+              </div>
+              <div class="row">
+                <div>
+                  <div class="item-box flex">
+                    <div>
+                      <span class="icon color-font"> </span>
+                    </div>
+                    <div class="cont">
+                      <h6>HTML CSS</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Incidunt aperiam earum deleniti facere voluptate illum
+                        commodi quas placeat rem mollitia! Nemo soluta
+                        perspiciatis dolorum cumque ad exercitationem, amet
+                        minima. Suscipit?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="line bottom right"></div>
+          </section>
+          <section class="portfolio"></section>
+          <section class="testimonials"></section>
+          <section class="blog"></section>
+          <section class="contact-us"></section>
         </main>
         <footer></footer>
       </div>
