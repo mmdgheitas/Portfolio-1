@@ -75,7 +75,7 @@ p {
 }
 
 #inner-wrapper {
-  width: 800px;
+  width: 830px;
   margin: auto;
   padding: 15px;
 }
@@ -113,7 +113,7 @@ p {
 
 nav {
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 nav ul {
@@ -131,6 +131,7 @@ nav a:hover {
 
 .home .container {
   align-items: center;
+  margin: 10px 0;
 }
 
 .home .container div {
@@ -155,6 +156,7 @@ main img {
   font-size: 20px;
   margin-top: 30px;
   justify-content: space-between;
+  width: 70%;
 }
 
 .line {
