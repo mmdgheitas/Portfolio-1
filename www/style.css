@@ -1,11 +1,12 @@
 * {
-  margin: 0em;
-  padding: 0em;
+  margin: 0;
+  padding: 0;
   font-size: 100%;
   border-style: none;
   list-style-type: none;
   color: var(--txt-color);
 }
+
 :root {
   --txt-color: #ccd0cf;
   --heading-color: #9ba8ab;
@@ -28,17 +29,39 @@
   -webkit-text-fill-color: transparent;
 }
 
+.o-hidden {
+  overflow: overlay;
+}
+
+.o-hidden a {
+  color: #11212d;
+}
+
 body {
   font-family: "Times New Roman", Times, serif, calibri, sans-serif;
   background-image: url(./img/7.jpg);
 }
 
+p {
+  color: #888;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+  margin: 0;
+}
+
+.bg {
+  background-color: aliceblue;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 #wrapper {
-  /* background-image: url(./img/background-copy.jpg); */
-  width: 900px;
+  width: 1000px;
   height: 550px;
   margin: auto;
-  margin-top: 45px;
+  margin-top: 70px;
   background-position: center;
   box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
@@ -94,10 +117,8 @@ nav a:hover {
 
 .home .container h1 {
   font-size: 60px;
-}
-h1 {
   color: var(--gold-color);
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 main img {
@@ -106,7 +127,7 @@ main img {
 
 .home .container #social-icon ul {
   font-size: 25px;
-  margin-top: 120px;
+  margin-top: 90px;
   justify-content: space-between;
 }
 
@@ -132,6 +153,7 @@ main img {
 .service .row {
   margin: 10rem auto 80px;
   text-align: center;
+  justify-content: center;
 }
 
 .service .row h6 {
@@ -151,10 +173,160 @@ main img {
   text-align: left;
   margin-top: 30px;
   padding: 60px 40px;
+  flex: 0 0 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
 .services .item-box .icon {
   text-align: center;
   font-size: 60px;
   width: 80px;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  padding: 30px 0;
+  color: #fff;
+  transition: all 0.7s;
+}
+
+.topnav .container-fluid {
+  padding: 0 50px;
+}
+
+.topnav .logo {
+  width: 50px;
+}
+
+.topnav .menu-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.topnav .menu-icon .icon i {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+.topnav .menu-icon .text {
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+.topnav .logo img {
+  width: 30px;
+}
+
+.hamenu .menu-links {
+  margin-top: 30px;
+}
+
+.hamenu .menu-links .main-menu {
+  position: relative;
+  z-index: 2;
+}
+
+.hamenu .menu-links .o-hidden {
+  display: inline-block;
+}
+
+.hamenu .menu-links .main-menu > li {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+  width: max-content;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.hamenu .menu-links .main-menu > li .link {
+  transform: translateY(45px);
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.hamenu.open .menu-links .main-menu > li .link {
+  transform: translateY(0);
+  transition-delay: 1s;
+}
+
+.hamenu .menu-links .main-menu > li span.nm {
+  opacity: 0.8;
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+.hamenu .menu-links .main-menu > li .link i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.hamenu .menu-links .main-menu .sub-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition-delay: 0.2s;
+}
+
+.hamenu .menu-links .main-menu .sub-menu li {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  width: max-content;
+}
+
+.hamenu .menu-links .main-menu .sub-menu li .sub-link.back {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hamenu .menu-links .main-menu .sub-menu li .sub-link.back i {
+  margin-left: 10px;
+}
+
+.hamenu .cont-info {
+  margin-top: 50px;
+  position: relative;
+}
+
+.hamenu .cont-info .item {
+  margin-bottom: 30px;
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.hamenu.open .cont-info .item {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 1s;
+}
+
+.hamenu .cont-info .item h6 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
