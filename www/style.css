@@ -80,6 +80,10 @@ span {
   height: 100%;
   width: 100%;
 }
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Wrapper styles */
 #wrapper {
@@ -545,4 +549,128 @@ main img {
   font-size: 15px;
   display: table-cell;
   vertical-align: middle;
+}
+
+.work-carousel .swiper-slide {
+  padding: 0px 15px;
+  margin-top: 5rem;
+}
+
+.work-carousel .content {
+  position: relative;
+}
+
+.imago {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.imago.animated {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.work-carousel .content .item-img {
+  position: relative;
+  height: 480px;
+  line-height: 0;
+}
+
+.work-carousel .noraidus .item-img {
+  height: 480px;
+  border-radius: 0;
+}
+
+.work-carousel .content .cont {
+  position: relative;
+}
+
+.work-carousel .noraidus .cont {
+  position: absolute;
+  padding: 15px 30px;
+  background: #fff;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.work-carousel .content .cont h6 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.work-carousel .noraidus .cont h6 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.work-carousel .content .cont h4 {
+  font-size: 17px;
+}
+
+.work-carousel .noraidus .cont h4 {
+  font-size: 17px;
+}
+
+.work-carousel .simp-next,
+.work-carousel .simp-prev {
+  color: #fff;
+  top: auto;
+  bottom: 0;
+}
+
+.work-carousel .simp-next {
+  right: 30px;
+}
+
+.simple-btn {
+  position: relative;
+  padding: 7px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.simple-btn:after {
+  content: "";
+  width: 45%;
+  height: 100%;
+}
+
+.simple-btn.right:after {
+  left: auto;
+  right: 0;
+}
+
+.work-carousel .simp-next,
+.work-carousel .simp-prev {
+  color: #fff;
+  top: auto;
+  bottom: 0;
+}
+
+.work-carousel .simp-prev {
+  left: 30px;
 }
