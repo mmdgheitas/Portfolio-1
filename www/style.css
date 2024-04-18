@@ -10,7 +10,7 @@
 
 /* Root variables */
 :root {
-  --txt-color: #ccd0cf;
+  --txt-color: #ffffff;
   --heading-color: #9ba8ab;
   --primary-color: #4a5c6a;
   --border-color: #253745;
@@ -115,6 +115,9 @@ span {
 .o-hidden a:hover {
   text-decoration: none;
 }
+.position-re {
+  position: relative;
+}
 
 /* Container styles */
 .container {
@@ -138,7 +141,7 @@ nav {
 }
 
 nav ul {
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 nav a {
@@ -455,6 +458,10 @@ main img {
   margin-bottom: 30px !important;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
 /* About us styles */
 
 .about-us {
@@ -505,9 +512,19 @@ main img {
   color: #fff;
 }
 
+.about-us .img .stauts .item:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 1px solid rgba(100, 100, 100, 0.1);
+}
+
 .about-us .img .stauts .item:first-of-type {
   background: #f5f5f5;
-  color: #121a21;
+  color: var(--dark-color);
 }
 
 .about-us .img .stauts .item h4 {
@@ -528,14 +545,4 @@ main img {
   font-size: 15px;
   display: table-cell;
   vertical-align: middle;
-}
-
-.about-us .img .stauts .item:after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  border: 1px solid rgba(100, 100, 100, 0.1);
 }
