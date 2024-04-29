@@ -26,6 +26,13 @@ html {
   width: 100%;
 }
 
+html{
+    /* mmd added */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 body {
   font-family: "Times New Roman", Times, serif, calibri, sans-serif;
   background: linear-gradient(
@@ -93,6 +100,7 @@ span {
   box-shadow: 10px 10px 20px rgb(0, 0, 0);
   background-color: #11212d;
   border-radius: 20px;
+  
 }
 
 #inner-wrapper {
